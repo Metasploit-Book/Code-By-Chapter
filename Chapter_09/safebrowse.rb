@@ -20,7 +20,6 @@ class MetasploitModule < Msf::Auxiliary
 					[ 'URL', 'https://console.cloud.google.com'],
 				]
 		)
-#todo pass in geocoords instead of venueid, create a venueid, other tom foolery
 		register_options(
 			[
 				Opt::RHOST('safebrowsing.googleapis.com'),
