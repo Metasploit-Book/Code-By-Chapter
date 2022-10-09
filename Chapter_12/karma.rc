@@ -7,7 +7,6 @@ setg AUTOPWN_PORT 55550
 setg AUTOPWN_URI /ads
 
 set LHOST 10.0.0.1
-set LPORT 45000
 set SRVPORT 55550
 set URIPATH /ads
 
