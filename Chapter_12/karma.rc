@@ -45,16 +45,6 @@ set SSL true
 set SRVPORT 465
 run
 
-use auxiliary/server/fakedns
-unset TARGETHOST
-set SRVPORT 5353
-run
-
-use auxiliary/server/fakedns
-unset TARGETHOST
-set SRVPORT 53
-run
-
 use auxiliary/server/capture/http
 set SRVPORT 80
 set SSL false
@@ -73,4 +63,12 @@ run
 use auxiliary/server/capture/http
 set SRVPORT 8443
 set SSL true
+run
+
+
+use auxiliary/server/capture/http_ntml
+set LOGFILE captured_hashes.txt
+set URIPATH /
+set SRVPORT 8080
+
 run
